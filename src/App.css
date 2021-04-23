@@ -1,0 +1,113 @@
+/* **************NavBar logo********* */
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root{
+  --primary_white :#fff;
+  --primary_orange:orange;
+  --primary_dark :rgba(255,255,255,0);
+  --primary_red :red;
+}
+
+.logo{
+  width: 200px;
+  height: 50px;
+}
+
+
+/* ********link******* */
+nav{
+  z-index:2;
+}
+ a .nav-link{
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  
+ 
+}
+.nav-link{
+  color:  var(--primary_white)!important;
+}
+nav ul li {
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+nav ul li a{
+  font-size: 12px;
+}
+ 
+.navbar-nav li a{
+  margin: 0 8px;
+  border: 3px solid var(--primary_dark);
+  
+}
+
+ .navbar-nav > li >a.active, .navbar-nav >li >a:focus{
+  border-top: 3px solid var(--primary_orange);
+} 
+
+ 
+/* ****************header*********** */
+.header-wrapper{
+  position: relative;background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   z-index: 1;
+}
+.main-info h1{
+  color: var(--primary_orange);
+  text-transform: uppercase;
+}
+
+
+
+
+
+/* ***************typed text********* */
+ .typed-text{
+   font-size: 28px;
+   color: var(--primary_white);
+    
+ }
+ .btn.btn-dark.contractButton{
+   text-transform: uppercase;
+   margin-top: 8px;
+   padding: 10px 13px;
+   color:#fff;
+   background: #343A40;
+   font-weight: 500;
+   border: none;
+ }
+ .btn.btn-dark.contractButton:hover{
+  background:#ddd;
+  color:  var(--primary_red);
+   font-weight: 500;
+   border: none;
+    
+
+
+ }
+
+ .tsparticles-canvas-el{
+   position: absolute;
+   height: 100vh;
+   width: 100%;
+   z-index: 1;   
+    
+ }
